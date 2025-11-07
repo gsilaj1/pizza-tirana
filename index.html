@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizza Shop • Tirana</title>
+  <meta name="description" content="Pica e freskët me dërgesë në Tiranë. Margherita, Pepperoni, 4 Djathra. Porosit tani!">
+
+  <!-- Google Fonts (saktë) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS (Saktë) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+      
+        <span>Pizza<span class="accent">Tirana</span></span>
+      </a>
+
+      <!-- NAV për desktop + mobile -->
+      <nav id="nav" class="nav-links">
+        <a href="index.html#menu">Menu</a>
+        <a href="about.html">Rreth Nesh</a>
+        <a href="index.html#offers">Oferta</a>
+        <a href="index.html#delivery">Delivery</a>
+        <a href="contact.html" class="btn btn--primary">Porosit tani</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Hap mbyll menunë">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <h1>Pica e freskët, gati për ty </h1>
+      <p>Margherita, Pepperoni, 4 Djathra – brumë 48h dhe përbërës të përzgjedhur. Porosi të shpejtë në Tiranë.</p>
+      <div class="hero__cta">
+        <a href="#menu" class="btn btn--primary">Shfleto menunë</a>
+        <a href="contact.html" class="btn btn--ghost">Rezervo tavolinë</a>
+      </div>
+      <div class="hero__badge">Nga <strong>449 Lekë</strong></div>
+    </div>
+    <!-- vendos fotografinë tënde te img/hero.jpg -->
+    <img class="hero__bg" src="img/hero.jpg" alt="Pica e nxehtë">
+  </section>
+
+  <!-- Highlights -->
+  <section class="features container">
+    <div class="feature">
+      <div class="feature__icon">🔥</div>
+      <h3>Furrë me gur</h3>
+      <p>Brumë i fermentuar 48h për brendi të butë dhe korse krokante.</p>
+    </div>
+    <div class="feature">
+      <div class="feature__icon">🧀</div>
+      <h3>Djathë cilësor</h3>
+      <p>Mozzarella e freskët dhe parmigiano i vërtetë.</p>
+    </div>
+    <div class="feature">
+      <div class="feature__icon">⏱️</div>
+      <h3>Dërgesë e shpejtë</h3>
+      <p>Mesatarisht 25–30 min brenda Tiranës.</p>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="section container">
+    <div class="section__head">
+      <h2>Menu</h2>
+      <p>Zgjidh të preferuarën tënde. Personalizo sipas dëshirës.</p>
+    </div>
+
+    <div class="grid cards">
+      <!-- Card 1 -->
+      <article class="card">
+        <img src="img/margarita.jpg" alt="Margherita" class="card__img">
+        <div class="card__body">
+          <h3>Margherita</h3>
+          <p>Domate San Marzano, mozzarella, borzilok i freskët.</p>
+          <div class="card__meta">
+            <span class="price">449 Lekë</span>
+            <button class="btn btn--sm">Shto</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <img src="img/pepperoni.jpg" alt="Pepperoni" class="card__img">
+        <div class="card__body">
+          <h3>Pepperoni</h3>
+          <p>Mozzarella, pepperoni i tymosur, vaj speci pikant.</p>
+          <div class="card__meta">
+            <span class="price">549 Lekë</span>
+            <button class="btn btn--sm">Shto</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <img src="img/4cheese.jpg" alt="4 Djathra" class="card__img">
+        <div class="card__body">
+          <h3>4 Djathra</h3>
+          <p>Mozzarella, gorgonzola, parmigiano, provolone.</p>
+          <div class="card__meta">
+            <span class="price">599 Lekë</span>
+            <button class="btn btn--sm">Shto</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Offers / Banner -->
+  <section id="offers" class="banner">
+    <div class="container banner__content">
+      <div>
+        <h3>Oferta Student 🧑‍🎓</h3>
+        <p>Margherita + pije 330ml vetëm <strong>489 Lekë</strong> (e hënë–e premte, 11:00–16:00).</p>
+      </div>
+      <a href="contact.html" class="btn btn--dark">Merr ofertën</a>
+    </div>
+  </section>
+
+  <!-- About (shkurt në faqe kryesore) -->
+  <section class="section container about">
+    <div class="about__text">
+      <h2>Rreth Nesh</h2>
+      <p>Besojmë te përbërësit e thjeshtë dhe teknika e duhur. Brumi ynë qëndron 48 orë, salca përzihet çdo mëngjes.</p>
+      <ul class="ticks">
+        <li>Produkt lokal kur është e mundur</li>
+        <li>Vegjetarian & pikant sipas dëshirës</li>
+        <li>Paketime eco</li>
+      </ul>
+      <p style="margin-top:10px;"><a class="link" href="about.html">Lexo më shumë →</a></p>
+    </div>
+    <img src="img/kitchen.jpg" alt="Kuzhina" class="about__img">
+  </section>
+
+  <!-- Contact CTA (shkurt) -->
+  <section id="contact" class="section container contact">
+    <div>
+      <h2>Porosit tani</h2>
+      <p>Telefon: <a href="tel:+355670000000">+355 67 000 0000</a> • WhatsApp i njëjtë</p>
+      <p>Adresa: Rr. Myslym Shyri, Tiranë • Orari: 10:00–23:30</p>
+      <div class="contact__cta">
+        <a class="btn btn--primary" href="tel:+355670000000">📞 Thirr</a>
+        <a class="btn btn--ghost" href="contact.html">📩 Na shkruaj</a>
+      </div>
+    </div>
+    <iframe
+      class="map"
+      title="Harta"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://maps.google.com/maps?q=Tirana&t=&z=14&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+  </section>
+
+  <!-- Delivery (i ri) -->
+  <section id="delivery" class="section container delivery">
+    <div class="section__head">
+      <h2>Dërgesa në Tiranë</h2>
+      <p>Shpejt, i nxehtë dhe i sigurt. Mesatarisht 25–30 min në qendër.</p>
+    </div>
+
+    <!-- Hapat -->
+    <div class="grid delivery__steps">
+      <div class="step card"><div class="card__body">
+        <h3>1. Zgjidh picën</h3>
+        <p>Shto nga menuja ose na telefono direkt.</p>
+      </div></div>
+      <div class="step card"><div class="card__body">
+        <h3>2. Vendos adresën</h3>
+        <p>Shkruaj lagjen/kodin postar; ne llogarisim zonën.</p>
+      </div></div>
+      <div class="step card"><div class="card__body">
+        <h3>3. Dorëzim i shpejtë</h3>
+        <p>Kuzhina ndezur, korrieri niset menjëherë.</p>
+      </div></div>
+    </div>
+
+    <!-- Zona & Tarifat -->
+    <div class="grid delivery__zones">
+      <article class="card">
+        <div class="card__body">
+          <h3>Zona A <span class="pill pill--green">150 Lekë</span></h3>
+          <p class="muted">Qendër, Blloku, Myslym Shyri, 9-Katshet</p>
+          <ul class="ticks">
+            <li>Kohë mesatare: 20–30 min</li>
+            <li>Porosi min.: 400 Lekë</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__body">
+          <h3>Zona B <span class="pill pill--amber">200 Lekë</span></h3>
+          <p class="muted">Don Bosko, 21 Dhjetori, Komuna e Parisit</p>
+          <ul class="ticks">
+            <li>Kohë mesatare: 25–35 min</li>
+            <li>Porosi min.: 500 Lekë</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__body">
+          <h3>Zona C <span class="pill pill--red">250–300 Lekë</span></h3>
+          <p class="muted">Sauk, Fresku, Laprakë, Kashar</p>
+          <ul class="ticks">
+            <li>Kohë mesatare: 30–45 min</li>
+            <li>Porosi min.: 600 Lekë</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <!-- Orari & Metodat -->
+    <div class="banner" style="margin-top:28px;">
+      <div class="container banner__content">
+        <div>
+          <h3>Orari i dërgesave</h3>
+          <p>E hënë – E diel: <strong>10:00 – 23:30</strong> • Thirr/WhatsApp: <a href="tel:+355670000000">+355 67 000 0000</a></p>
+        </div>
+        <div>
+          <p class="muted">Pagesa: Cash / Kartë POS / Transferte</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontroll postal (opsional) -->
+    <div class="card" style="padding:16px;">
+      <div class="card__body">
+        <h3>Kontrollo zonën sipas kodit postar</h3>
+        <p class="muted">Shembuj Tirane: 1001, 1010, 1023, 1032…</p>
+        <form id="postal-form" class="postal">
+          <input id="postal" type="text" inputmode="numeric" placeholder="Shkruaj kodin p.sh. 1001" />
+          <button class="btn btn--dark" type="submit">Kontrollo</button>
+        </form>
+        <p id="postal-result" style="margin-top:10px;"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> PizzaTirana. Të gjitha të drejtat e rezervuara.</p>
+      <a href="#" class="link">Politika e privatësisë</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

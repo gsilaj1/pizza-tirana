@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt • PizzaTirana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span>Pizza<span class="accent">Tirana</span></span></a>
+      <nav id="nav" class="nav-links">
+        <a href="index.html#menu">Menu</a>
+        <a href="about.html">Rreth Nesh</a>
+        <a href="index.html#offers">Oferta</a>
+        <a href="contact.html" class="btn btn--primary">Porosit tani</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Hap mbyll menunë">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero i vogël -->
+  <section class="hero" style="min-height:46vh;">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <h1>Na kontakto</h1>
+      <p>Porosi telefonike, WhatsApp, ose formular – si të të jenë më lehtë.</p>
+    </div>
+    <img class="hero__bg" src="img/contact-hero.jpg" alt="Kontakt">
+  </section>
+
+  <!-- Detaje kontakti + orari -->
+  <section class="section container contact">
+    <div>
+      <h2>Detajet</h2>
+      <p><strong>Telefon:</strong> <a href="tel:+355670000000">+355 67 000 0000</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/355670000000" target="_blank" rel="noopener">Shkruaj në WhatsApp</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@pizzatirana.al">info@pizzatirana.al</a></p>
+      <p><strong>Adresë:</strong> Rr. Myslym Shyri, Tiranë</p>
+      <p><strong>Orari:</strong> E hënë – E diel, 10:00–23:30</p>
+
+      <h3 style="margin-top:18px;">Formulari i kontaktit</h3>
+      <!-- Zëvendëso email-in në mailto ose lidhe me backend-in tënd -->
+      <form class="card" action="mailto:info@pizzatirana.al" method="POST" enctype="text/plain" style="padding:16px;">
+        <label>Emri
+          <input type="text" name="emri" required style="width:100%; padding:12px; margin-top:6px; border-radius:10px; border:1px solid var(--line); background:var(--card); color:var(--text);" />
+        </label>
+        <br/><br/>
+        <label>Telefon
+          <input type="tel" name="telefon" required style="width:100%; padding:12px; margin-top:6px; border-radius:10px; border:1px solid var(--line); background:var(--card); color:var(--text);" />
+        </label>
+        <br/><br/>
+        <label>Mesazhi
+          <textarea name="mesazhi" rows="4" required style="width:100%; padding:12px; margin-top:6px; border-radius:10px; border:1px solid var(--line); background:var(--card); color:var(--text);"></textarea>
+        </label>
+        <br/>
+        <button class="btn btn--primary" type="submit">Dërgo</button>
+      </form>
+
+      <p class="muted" style="color:var(--muted); margin-top:8px;">Shënim: “mailto” hap programin e email-it të klientit; për dërgim pa hapur email, duhen 2 rreshta backend (mund të të shkruaj një shembull me PHP/Node kur të duash).</p>
+    </div>
+
+    <iframe
+      class="map"
+      title="Harta"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://maps.google.com/maps?q=Myslym%20Shyri%2C%20Tirana&t=&z=14&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+  </section>
+
+  <!-- Social -->
+  <section class="section container">
+    <div class="section__head">
+      <h2>Na ndiq</h2>
+      <p>Shpesh postojmë oferta dhe kombe speciale.</p>
+    </div>
+    <div class="grid" style="grid-template-columns:repeat(3,1fr);">
+      <a class="card" href="#" target="blank" rel="noopener"><div class="card_body"><h3>Instagram</h3><p>@pizzatirana</p></div></a>
+      <a class="card" href="#" target="blank" rel="noopener"><div class="card_body"><h3>Facebook</h3><p>/pizzatirana</p></div></a>
+      <a class="card" href="#" target="blank" rel="noopener"><div class="card_body"><h3>TikTok</h3><p>@pizzatirana</p></div></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> PizzaTirana.</p>
+      <a href="#" class="link">Politika e privatësisë</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

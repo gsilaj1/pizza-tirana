@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rreth Nesh • PizzaTirana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span>Pizza<span class="accent">Tirana</span></span></a>
+      <nav id="nav" class="nav-links">
+        <a href="index.html#menu">Menu</a>
+        <a href="about.html">Rreth Nesh</a>
+        <a href="index.html#offers">Oferta</a>
+        <a href="contact.html" class="btn btn--primary">Porosit tani</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Hap mbyll menunë">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero i vogël -->
+  <section class="hero" style="min-height:48vh;">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <h1>Rreth nesh</h1>
+      <p>Brumë 48 orë, përbërës të zgjedhur dhe pasion për pica të përkryera.</p>
+    </div>
+    <img class="hero__bg" src="img/about-hero.jpg" alt="Pica & kuzhinë">
+  </section>
+
+  <!-- Historia + Vlerat -->
+  <section class="section container about">
+    <div class="about__text">
+      <h2>Historia jonë</h2>
+      <p>Nisëm në 2022 si një kuzhinë e vogël artizanale në Tiranë. Sot shërbejmë dhjetëra klientë çdo ditë, por sekreti s’ka ndryshuar: kohë, kujdes dhe përbërës të mirë.</p>
+      <ul class="ticks">
+        <li>Brumë i fermentuar 48 orë</li>
+        <li>Mozzarella e freskët, salcë San Marzano</li>
+        <li>Paketim eco & sezonale kur është e mundur</li>
+      </ul>
+    </div>
+    <img src="img/kitchen.jpg" alt="Kuzhina" class="about__img">
+  </section>
+
+  <!-- Timeline i shkurtër -->
+  <section class="section container">
+    <div class="section__head">
+      <h2>Si arritëm këtu</h2>
+      <p>Pak momente kyçe.</p>
+    </div>
+    <div class="grid" style="grid-template-columns:1fr 1fr; gap:18px;">
+      <div class="card"><div class="card__body"><h3>2022</h3><p>Hapëm furrën tonë të parë me gur.</p></div></div>
+      <div class="card"><div class="card__body"><h3>2023</h3><p>Nisi dërgesa në të gjithë Tiranën.</p></div></div>
+      <div class="card"><div class="card__body"><h3>2024</h3><p>Menu e re me 4 Djathra & Truffle.</p></div></div>
+      <div class="card"><div class="card__body"><h3>2025</h3><p>Programi “Student Deal”.</p></div></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section container">
+    <div class="section__head">
+      <h2>Pyetje të shpeshta</h2>
+    </div>
+    <div class="grid" style="grid-template-columns:1fr 1fr;">
+      <div class="card"><div class="card__body"><h3>A bëni porosi?</h3><p>Po, brenda Tiranës 10:00–23:30.</p></div></div>
+      <div class="card"><div class="card__body"><h3>A keni opsione vegjetariane?</h3><p>Po, disa pica dhe mund t’i personalizojmë.</p></div></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> PizzaTirana.</p>
+      <a href="#" class="link">Politika e privatësisë</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
